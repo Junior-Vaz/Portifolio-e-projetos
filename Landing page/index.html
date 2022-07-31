@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfica Vaz</title>
+    <style>
+        @charset "UTF-8";
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-image: url(fundo.jpg);
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-attachment: fixed;
+            }
+        header{
+            background-image:linear-gradient(to left,rgb(0, 32, 36),rgb(0, 0, 0));
+            height: 70px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content:space-between;
+            border-bottom: 2px;
+            border-color: #ffc400;
+            border-bottom-style: solid;
+        }
+        .icon{
+            padding-left: 30px;
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            padding-right: 40px;
+        }
+        nav > a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav > a:hover{
+            color: #ffc400;
+        }
+        .landing{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 600px;
+            background-image: linear-gradient(to bottom,#ffffff8a,#000042f3);
+        }
+        .div1{
+            color: #ffffff;
+            padding-left: 70px;
+            font-size: 1.8em;
+            
+        }
+        h1{
+            font-weight: 100;
+            font-size: 3.5em;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 500;
+            text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.781);
+        }
+        h2{
+            font-family: 'Oswald', sans-serif;
+            font-weight: 100;
+            font-size: 2.4em;
+            line-height: 10px;
+            color: rgb(255, 217, 0);
+            text-shadow: 1px 1px 10px black;
+        }
+        .pcon{
+            text-indent: 20px;
+            margin-bottom: 30px;
+            font-size: 0.6em;
+            text-shadow: 1px 1px 10px black;
+        }
+        .catalogo{
+            padding: 5px 20px 5px 20px;
+            background-color: #ffc400;
+            font-size: 0.7em;
+            font-family: 'Oswald', sans-serif;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.726);
+        }
+        .div1 > a{
+            padding: 6px 20px 6px 20px;
+            color: #000000;
+            text-decoration: none;
+            border-radius: 15px;
+        }
+        .divimg > img{
+            padding-right: 20px;
+        }
+
+        .landing1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 500px;
+            background-image: linear-gradient(to bottom,#000042f3,#090233);
+        }
+        .divc1,.divc2,.divc3,.divc4{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: #09005a6c;
+            height: 100px;
+            width: 315px;
+            padding: 10px;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.096);
+        }
+        .h1c{
+            font-size:  2em;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .pcaix{
+            color: #ffc400;
+            font-weight: 100;
+            font-family: 'Oswald', sans-serif;
+        }
+        .imgc{
+            margin-left: 10px;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="icon"><a href="index.html"><img src="logo.png" alt="" width="140"></a></div>
+        <nav>
+            <a href="#">Serviços</a>
+            <a href="#">Quem Somos</a>
+            <a href="#">Contatos</a>    
+            <a href="#">Redes Sociais</a>
+        </nav>
+    </header>
+    <div class="barra"></div>
+        <main>
+            <section class="landing">
+                <div class="div1">
+                    <h1>DO DESIGN</h1>
+                    <h2>AO ACABAMENTO!</h2>
+                    <br>
+                    <p class="pcon">A gráfica com a melhor estrutura e os melhores profissionais <br> do mercado, fazemos tipo de serviços grafico em geral. <br> Faça seu orçamento conosco.</p>
+                    <a class="catalogo" href="#">Veja nosso Catálogo <img src="677184-200.png" alt="" width="20"></a>
+                </div>
+                <div class="divimg">
+                    <img src="Icon design-rafiki.png" alt="ilustration" width="600":>
+                </div>
+            </section>
+            <section class="landing1">
+                <div class="divc1">
+                    <div class="imgc">
+                        <img src="whatsapp.png" alt="" width="50">
+                    </div>
+                    <div>
+                        <h2 class="h1c">Chame no WhatsApp</h2>
+                        <p class="pcaix">(89)9 9987-0854</p>
+                        <p class="pcaix">(49)9 9117-8668</p>
+                    </div>
+                </div>
+                <div class="divc2">
+                    <div class="imgc">
+                        <img src="whatsapp.png" alt="" width="50">
+                    </div>
+                    <div>
+                        <h2 class="h1c">Pronta Entrega</h2>
+                        <p class="pcaix">Envio e rastreio imediato</p>
+                    </div>
+                </div>
+                <div class="divc3">
+                    <div class="imgc">
+                        <img src="whatsapp.png" alt="" width="50">
+                    </div>
+                    <div>
+                        <h2 class="h1c">Pagamento Facilitado</h2>
+                        <p class="pcaix">Pagamentos em diversos modos</p>
+                    </div>
+                </div>
+                <div class="divc4">
+                    <div class="imgc">
+                        <img src="whatsapp.png" alt="" width="50">
+                    </div>
+                    <div>
+                        <h2 class="h1c">Qualidade e Garantia</h2>
+                        <p class="pcaix">Materia prima de alta qualidade</p>
+                    </div>
+                </div>
+            </section>
+            <section class="landing2">
+               
+            </section>
+            <section class="landing2">
+
+            </section>
+        </main>
+    
+</body>
+</html>

@@ -1,0 +1,132 @@
+<html>
+	<head>
+			<meta charset="utf-8">
+			<title>Meu primeiro HTML</title>
+			<style>
+				*{
+					margin: 0px;
+					padding: 0px;
+					font-family: arial;
+				}
+
+				main{
+					background: url(fundo.jpg);
+					background-repeat: no-repeat;
+					background-size: cover;
+					background-position: center center;
+					background-attachment: fixed;
+					width: 100vw;
+					height: 100vh;
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					align-items: center;
+					
+				}
+				section{
+					display: flex;
+					justify-content: center;
+					align-content: center;
+					align-items: center;
+					width: 1000px;
+					margin: auto;
+					position: absolute;
+					background-color: white;
+					box-shadow: 4px 2px 15px rgba(0, 0, 0, 0.205);
+				}
+				.login{
+					display: flex;
+					flex-direction: column;
+					align-content: center;
+					color: #035e87;
+					width: 1300px;
+					height: 400px;
+					padding: 20px;
+					margin-right: 0px;
+				}
+				.buttom_login{
+					width: 100%;
+					border: none;
+					padding-top: 10px;
+					padding-bottom: 10px;
+					outline: none;
+					font-family: arial;
+					font-weight: 800;
+					font-size: 1em;
+					color: white;
+					background-color: #035e87;
+					cursor: pointer;
+				}
+				form{
+					width: 300px;
+					height: 390px;
+				}
+				.div_login{
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					width: 100%;
+				}
+				.h1_login{
+					display: flex;
+					justify-content: center;
+					margin-bottom: 20px;
+					margin-top: 50px;
+				}
+				.text{
+					width: 100%;
+					border: 0.1px solid gray;
+					margin: 0;
+					margin-bottom: 10px;
+					padding: 10px 10px 10px 20px;
+					font-size: 1em;
+					outline: none;
+					font-weight: 100;
+					font-family: arial;
+					color: gray;
+				}
+				.image{
+					margin-top: 35px;
+					width: 100%;
+				}
+				.div_image{
+				
+				background: rgb(3,94,135);
+				background: linear-gradient(0deg, rgba(3,94,135,0.7175245098039216) 0%, rgba(3,94,135,1) 51%, rgba(3,94,135,1) 100%);
+					padding: 20px;
+					height: 450px;
+					width: 85%;
+				}
+			</style>
+	</head>
+	<body>
+		<header>
+			
+		</header>
+		<main>
+
+			<section>
+			<div class="div_image">
+				<img class="image" src="image.png" width="400px">
+			</div>
+				<div class="login">
+							<div class="h1_login">
+								<h1>Creat Account</h1>
+							</div>
+							<div class="div_login">
+								<form method="post" autocomplete="on">
+											<input class="text" type="name" name="login" id="idusuario" placeholder="🔑 Login:">
+												<br>
+											<input class="text" type="password" name="senha" id="idsenha" placeholder="🔒 Senha:">
+												<br>	
+										<a href="#"></a>	<input class="buttom_login" type="submit" name="btn_login" value="Sign Up"></a>
+								</form>			
+							</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			
+		</footer>
+	</body>
+</html>

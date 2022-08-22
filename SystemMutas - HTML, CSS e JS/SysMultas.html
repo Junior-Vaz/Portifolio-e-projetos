@@ -89,20 +89,25 @@
                     mult.style.background = 'rgb(2, 0, 121)'
                     mult.style.borderRadius = '10px'
                     mult.style.padding = '10px'
-                }else{
-                    mult.innerHTML = 'Sem multa ou infrações a mostrar'
-                    mult.style.background = 'rgb(2, 0, 121)'
-                    mult.style.borderRadius = '10px'
-                    mult.style.padding = '10px'
-                }
+                    }else{
+                        mult.innerHTML = 'Sem multa ou infrações a mostrar'
+                        mult.style.background = 'rgb(2, 0, 121)'
+                        mult.style.borderRadius = '10px'
+                        mult.style.padding = '10px'
+                            }
 
                     //Condição com caso valores de multas ultrapassar 150km 
                     if(RecV > 150){
-                        multa.innerHTML = `<strong>Multa de R$ 210,00</strong> por Excesso extremo de valocidade de ${RecV} Km/Hr`
-                        multa.style.background = 'rgb(2, 0, 121)'
-                        multa.style.borderRadius = '10px'
-                        multa.style.padding = '10px'
-                    }
+                            multa.innerHTML = `<strong>Multa de R$ 210,00</strong> por Excesso extremo de valocidade de ${RecV} Km/Hr`
+                            multa.style.background = 'rgb(2, 0, 121)'
+                            multa.style.borderRadius = '10px'
+                            multa.style.padding = '10px'
+                        }else{
+                            multa.innerHTML = 'Sem multa ou infrações a mostrar'
+                            multa.style.background = 'rgb(2, 0, 121)'
+                            multa.style.borderRadius = '10px'
+                            multa.style.padding = '10px'
+                                }
         }
     </script>
 </body>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas de Multas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="campo">
+                <form>
+                    <div class="textH1">
+                        <h1>SISTEMA DETRAN - SC</h1>
+                    </div>
+                    <table>
+                        <tr>
+                            <td><label for="ivel">Digite sua velocidade:</label></td>
+                            <td class="campoNumber"><input type="number" name="vel" id="ivel" placeholder="Km/hs"> Km/hr</td>
+                        </tr>
+                        <tr>
+                            <td><label for="iatual">Sua velocidade Atual:</label></td>
+                            <td class="campoResul"><div id="iatual"></div></td>
+                        </tr>
+                        <tr>
+                            <td><input class="btn_verif" type="button" value="Verificar" id="iver"></td>
+                        </tr>
+                    </table>
+                </form>
+
+                <form class="campoAviso">
+                    <table>
+                        <tr>
+                            <td><label>Avisos!</label></td>
+                        </tr>
+                        <tr>
+                            <td id="tdAviso"><div id="iaviso"></div></td>
+                        </tr>
+                    </table>
+                </form>
+
+                <form class="campoMulta">
+                    <table>
+                        <tr>
+                            <td><label>Multas e Infrações:</label></td>
+                        </tr>
+                        <tr>
+                            <td id="tdMulta"><div id="iMulta"></div></td>
+                        </tr>
+                             <td id="tdMulta1"><div id="iMulta1"></div></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        //Eventos Listeners
+        var a = document.getElementById('iver')
+        a.addEventListener('click',Calcular)
+        
+        //Variaveis 
+        var atual = document.getElementById('iatual') //resultado
+        var veloc = document.getElementById('ivel')
+        var mult = document.getElementById('iMulta')
+        var multa = document.getElementById('iMulta1')
+
+        //função para calcular limites
+        function Calcular(){
+            var RecV = Number(veloc.value)
+            atual.innerHTML = `${RecV} Km/hs`
+
+            //condição caso ultrapassar limites
+            if (RecV > 90) {
+                var aviso = document.getElementById('iaviso')
+                aviso.innerHTML = 'Você ultrapassou a velocidade <strong>PERMITIDA</strong> portando será <strong>MULTADO!</strong>'
+                
+            }
+            else{
+                var aviso = document.getElementById('iaviso')
+                aviso.innerHTML = 'Nenhuma infração.'
+            }
+
+                //condições com valores de multas caso ultrapassar 90km
+                if(RecV > 90){
+                    mult.innerHTML = `<strong>Multa de R$ 100,00</strong> por Excesso de Velocidade de ${RecV} Km/hr`
+                    mult.style.background = 'rgb(2, 0, 121)'
+                    mult.style.borderRadius = '10px'
+                    mult.style.padding = '10px'
+                }else{
+                    mult.innerHTML = 'Sem multa ou infrações a mostrar'
+                    mult.style.background = 'rgb(2, 0, 121)'
+                    mult.style.borderRadius = '10px'
+                    mult.style.padding = '10px'
+                }
+
+                    //Condição com caso valores de multas ultrapassar 150km 
+                    if(RecV > 150){
+                        multa.innerHTML = `<strong>Multa de R$ 210,00</strong> por Excesso extremo de valocidade de ${RecV} Km/Hr`
+                        multa.style.background = 'rgb(2, 0, 121)'
+                        multa.style.borderRadius = '10px'
+                        multa.style.padding = '10px'
+                    }
+        }
+    </script>
+</body>
+</html>

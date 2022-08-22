@@ -1,0 +1,75 @@
+@chaset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+main{
+    background-color: blueviolet;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+section{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+h1{
+    margin-bottom: 30px;
+    color:  rgb(255, 230, 0);
+}
+.textH1{
+    text-align: center;
+}
+td{
+    width: 180px;
+    height: 30px;
+}
+.campo{
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+}
+#ivel{
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+    border: 0px solid;
+    text-align: end;
+}
+.campoNumber{
+    text-align: end;
+}
+.btn_verif{
+    width: 80px;
+    height: 30px;
+    border: 0px solid;
+    border-radius: 10px;
+}
+.campoAviso{
+    margin-top: 10px;
+    background-color: rgb(2, 0, 121);
+    color: rgb(255, 230, 0);
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 3px;
+}
+.campoResul{
+    text-align: end;
+}
+td#tdAviso{
+    width: 366px;
+}
+.campoMulta{
+    margin-top: 10px;
+    background-color: rgb(90, 4, 170);
+    color: rgb(255, 230, 0);
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+td#tdMulta{
+    width: 366px;
+}

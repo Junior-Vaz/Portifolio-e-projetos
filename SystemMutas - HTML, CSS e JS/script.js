@@ -23,30 +23,34 @@ function Calcular(){
         var aviso = document.getElementById('iaviso')
         aviso.innerHTML = 'Nenhuma infração.'
     }
-
-        //condições com valores de multas caso ultrapassar 90km
-        if(RecV > 90){
+    //condições com valores de multas caso ultrapassar 90km
+    
+            if(RecV > 90 && RecV <150){
+            mult.style.transition = '0.5s'
             mult.innerHTML = `<strong>Multa de R$ 100,00</strong> por Excesso de Velocidade de ${RecV} Km/hr`
             mult.style.background = 'rgb(2, 0, 121)'
             mult.style.borderRadius = '10px'
             mult.style.padding = '10px'
             }else{
-                mult.innerHTML = 'Sem multa ou infrações a mostrar'
-                mult.style.background = 'rgb(2, 0, 121)'
-                mult.style.borderRadius = '10px'
-                mult.style.padding = '10px'
-                    }
-
-            //Condição com caso valores de multas ultrapassar 150km 
-            if(RecV > 150){
+                if(RecV > 150 && RecV <200){
+                    multa.style.transition = '0.5s'
                     multa.innerHTML = `<strong>Multa de R$ 210,00</strong> por Excesso extremo de valocidade de ${RecV} Km/Hr`
                     multa.style.background = 'rgb(2, 0, 121)'
                     multa.style.borderRadius = '10px'
                     multa.style.padding = '10px'
-                }else{
-                    multa.innerHTML = 'Sem multa ou infrações a mostrar'
-                    multa.style.background = 'rgb(2, 0, 121)'
-                    multa.style.borderRadius = '10px'
-                    multa.style.padding = '10px'
-                        }
-}
+                    }             
+            }if(RecV < 90){
+                mult.innerHTML = 'Sem multa ou infrações a mostrar'
+                mult.style.background = 'rgb(2, 0, 121)'
+                mult.style.borderRadius = '10px'
+                mult.style.padding = '10px'
+                mult.style.transition = '0.5s'
+
+                multa.style.transition = '0.5s'
+                multa.innerHTML = 'Sem multa ou infrações a mostrar'
+                multa.style.background = 'rgb(2, 0, 121)'
+                multa.style.borderRadius = '10px'
+                multa.style.padding = '10px'
+                }
+
+                    }     
